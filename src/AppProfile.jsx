@@ -3,8 +3,22 @@ import Avartar from './components/Avartar';
 import Profile from './components/Profile';
 
 function AppProfile() {
+  const handleClick = (event) => {
+    console.log(event);
+    alert('버튼이 클릭되었습니다.');
+  };
+
   return (
     <>
+      {/* 이벤트를 등록할때는 onclick처럼 onChange onSubmit 처럼 등록해줘야함
+          여기서 주의할게 handleClick() 이렇게 ()를 붙이면 안됨 즉시 함수를 실행하기 때문 왜냐하면
+          이렇게 하면 렌더링될때마다 함수가 실행되기 때문임
+          함수를 호출
+          이벤트가 발생하면 리액트에서 신트릭 이벤트에서 리스너에 전달하고 이벤트 속성에 원하는 함수를
+          연결할 수 있다.
+      */}
+
+      <button onClick={handleClick}>버튼</button>
       <Avartar
         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhbPEOgnXSl7ewS4sETsUgO4Oz1bjMhRjOtw&usqp=CAU"
         isNew={true}
