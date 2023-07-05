@@ -4,11 +4,12 @@
   background-color: beige;
 }
 
-.poiner {
+.pointer {
   position: absolute;
   background-color: crimson;
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  left: -15px top -15px;
+  left: 30px;
+  top: 30px;
 }

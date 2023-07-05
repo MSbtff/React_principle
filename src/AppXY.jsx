@@ -4,7 +4,7 @@ import './AppXY.css';
 export default function AppXY() {
   return (
     <div className="container">
-      <div className="ponter"></div>
+      <div className="pointer"></div>
     </div>
   );
 }
